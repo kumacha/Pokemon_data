@@ -40,7 +40,7 @@ for (let objectIndex in pokeObject) {
 		"むし",
 	);
 	pokeObject[objectIndex].type[0] = pokeObject[objectIndex].type[0].replace(
-		"Nomal",
+		"Normal",
 		"ノーマル",
 	);
 	pokeObject[objectIndex].type[0] = pokeObject[objectIndex].type[0].replace(

@@ -11,19 +11,19 @@ for (let index in pokeObject) {
 	if (pokeObject[index].id < 100) {
 		pokeObject[index].src = {};
 		pokeObject[index].src.normal =
-			"../data/images/00" + pokeObject[index].id + ".png";
+			"~/assets/images/00" + pokeObject[index].id + ".png";
 		pokeObject[index].src.small =
-			"../data/thumbnails/00" + pokeObject[index].id + ".png";
+			"~/assets/thumbnails/00" + pokeObject[index].id + ".png";
 		pokeObject[index].src.icon =
-			"../data/images/sprites/00" + pokeObject[index].id + "MS.png";
+			"~/assets/images/sprites/00" + pokeObject[index].id + "MS.png";
 	} else {
 		pokeObject[index].src = {};
 		pokeObject[index].src.normal =
-			"../data/images/00" + pokeObject[index].id + ".png";
+			"~/assets/images/00" + pokeObject[index].id + ".png";
 		pokeObject[index].src.small =
-			"../data/thumbnails/00" + pokeObject[index].id + ".png";
+			"~/assets/thumbnails/00" + pokeObject[index].id + ".png";
 		pokeObject[index].src.icon =
-			"../data/images/sprites/00" + pokeObject[index].id + "MS.png";
+			"~/assets/images/sprites/00" + pokeObject[index].id + "MS.png";
 	}
 }
 //処理後の2匹でテスト

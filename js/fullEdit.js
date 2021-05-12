@@ -17,19 +17,23 @@ for (let objectIndex in pokeObject) {
 	if (pokeObject[objectIndex].id < 100) {
 		pokeObject[objectIndex].src = {};
 		pokeObject[objectIndex].src.normal =
-			"../data/images/00" + pokeObject[objectIndex].id + ".png";
+			"require('~/assets/images/00" + pokeObject[objectIndex].id + ".png')";
 		pokeObject[objectIndex].src.small =
-			"../data/thumbnails/00" + pokeObject[objectIndex].id + ".png";
+			"require('~/assets/thumbnails/00" + pokeObject[objectIndex].id + ".png')";
 		pokeObject[objectIndex].src.icon =
-			"../data/images/sprites/00" + pokeObject[objectIndex].id + "MS.png";
+			"require('~/assets/images/sprites/00" +
+			pokeObject[objectIndex].id +
+			"MS.png')";
 	} else {
 		pokeObject[objectIndex].src = {};
 		pokeObject[objectIndex].src.normal =
-			"../data/images/00" + pokeObject[objectIndex].id + ".png";
+			"require('~/assets/images/00" + pokeObject[objectIndex].id + ".png')";
 		pokeObject[objectIndex].src.small =
-			"../data/thumbnails/00" + pokeObject[objectIndex].id + ".png";
+			"require('~/assets/thumbnails/00" + pokeObject[objectIndex].id + ".png')";
 		pokeObject[objectIndex].src.icon =
-			"../data/images/sprites/00" + pokeObject[objectIndex].id + "MS.png";
+			"require('~/assets/images/sprites/00" +
+			pokeObject[objectIndex].id +
+			"MS.png')";
 	}
 	//名前の処理
 	pokeObject[objectIndex].name = pokeObject[objectIndex].name.japanese;
@@ -70,7 +74,7 @@ for (let objectIndex in pokeObject) {
 		"むし",
 	);
 	pokeObject[objectIndex].type[0] = pokeObject[objectIndex].type[0].replace(
-		"Nomal",
+		"Normal",
 		"ノーマル",
 	);
 	pokeObject[objectIndex].type[0] = pokeObject[objectIndex].type[0].replace(
@@ -143,7 +147,7 @@ for (let objectIndex in pokeObject) {
 			"むし",
 		);
 		pokeObject[objectIndex].type[1] = pokeObject[objectIndex].type[1].replace(
-			"Nomal",
+			"Normal",
 			"ノーマル",
 		);
 		pokeObject[objectIndex].type[1] = pokeObject[objectIndex].type[1].replace(
