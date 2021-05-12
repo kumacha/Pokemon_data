@@ -11,7 +11,7 @@ console.log(pokeObject[0].name.chinese);
 //処理前のsrcプロパティを確認
 console.log(pokeObject[0].src);
 
-//処理開始
+//処理開始dayo
 for (let objectIndex in pokeObject) {
 	//画像のパスを付与する
 	if (pokeObject[objectIndex].id < 100) {
