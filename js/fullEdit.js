@@ -14,27 +14,32 @@ console.log(pokeObject[0].src);
 //処理開始dayo
 for (let objectIndex in pokeObject) {
 	//画像のパスを付与する
-	if (pokeObject[objectIndex].id < 100) {
+	if (pokeObject[objectIndex].id < 10) {
 		pokeObject[objectIndex].src = {};
 		pokeObject[objectIndex].src.normal =
-			"require('~/assets/images/00" + pokeObject[objectIndex].id + ".png')";
+			"/images/00" + pokeObject[objectIndex].id + ".png";
 		pokeObject[objectIndex].src.small =
-			"require('~/assets/thumbnails/00" + pokeObject[objectIndex].id + ".png')";
+			"/thumbnails/00" + pokeObject[objectIndex].id + ".png";
 		pokeObject[objectIndex].src.icon =
-			"require('~/assets/images/sprites/00" +
-			pokeObject[objectIndex].id +
-			"MS.png')";
+			"/images/sprites/00" + pokeObject[objectIndex].id + "MS.png";
+	} else if (pokeObject[objectIndex].id < 100) {
+		pokeObject[objectIndex].src = {};
+		pokeObject[objectIndex].src.normal =
+			"/images/0" + pokeObject[objectIndex].id + ".png";
+		pokeObject[objectIndex].src.small =
+			"/thumbnails/0" + pokeObject[objectIndex].id + ".png";
+		pokeObject[objectIndex].src.icon =
+			"/images/sprites/0" + pokeObject[objectIndex].id + "MS.png";
 	} else {
 		pokeObject[objectIndex].src = {};
 		pokeObject[objectIndex].src.normal =
-			"require('~/assets/images/00" + pokeObject[objectIndex].id + ".png')";
+			"/images/" + pokeObject[objectIndex].id + ".png";
 		pokeObject[objectIndex].src.small =
-			"require('~/assets/thumbnails/00" + pokeObject[objectIndex].id + ".png')";
+			"/thumbnails/" + pokeObject[objectIndex].id + ".png";
 		pokeObject[objectIndex].src.icon =
-			"require('~/assets/images/sprites/00" +
-			pokeObject[objectIndex].id +
-			"MS.png')";
+			"/images/sprites/" + pokeObject[objectIndex].id + "MS.png";
 	}
+
 	//名前の処理
 	pokeObject[objectIndex].name = pokeObject[objectIndex].name.japanese;
 	delete pokeObject[objectIndex].name.japanese;
