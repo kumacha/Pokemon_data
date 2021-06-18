@@ -165,7 +165,7 @@ for (let objectIndex in pokeObject) {
 		);
 		pokeObject[objectIndex].type[1] = pokeObject[objectIndex].type[1].replace(
 			"Fighting",
-			"ひこう",
+			"かくとう",
 		);
 		pokeObject[objectIndex].type[1] = pokeObject[objectIndex].type[1].replace(
 			"Rock",
