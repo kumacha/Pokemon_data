@@ -1,12 +1,12 @@
-const fs = require("fs");
+import * as fs from 'fs';
 
 //fsで読み込んだJSONをparseしてオブジェクト化
-let pokeObject = JSON.parse(fs.readFileSync("../data/pokedex.json", "utf8"));
-const result = {};
+let pokeObject : object  = JSON.parse(fs.readFileSync("../data/pokedex.json", "utf8"));
+const result : object  = {};
 //処理前の中国語のフシギダネでテスト
 console.log(pokeObject[0].name.chinese);
 
-for (index in pokeObject) {
+for (let index in pokeObject) {
 	pokeObject[index].name = pokeObject[index].name.japanese;
 	delete pokeObject[index].name.japanese;
 	delete pokeObject[index].name.chinese;

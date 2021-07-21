@@ -1,4 +1,4 @@
-const fs = require("fs");
+import * as fs from 'fs';
 
 //fsで読み込んだJSONをparseしてオブジェクト化
 let pokeObject = JSON.parse(fs.readFileSync("../data/pokedex.json", "utf8"));
@@ -92,7 +92,7 @@ for (let objectIndex in pokeObject) {
 	);
 	pokeObject[objectIndex].type[0] = pokeObject[objectIndex].type[0].replace(
 		"Fighting",
-		"ひこう",
+		"かくとう",
 	);
 	pokeObject[objectIndex].type[0] = pokeObject[objectIndex].type[0].replace(
 		"Rock",
