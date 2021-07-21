@@ -1,8 +1,8 @@
-const fs = require("fs");
+import * as fs from 'fs';
 
 //fsで読み込んだJSONをparseしてオブジェクト化
-let pokeObject = JSON.parse(fs.readFileSync("../data/pokedex.json", "utf8"));
-const result = {};
+let pokeObject : object  = JSON.parse(fs.readFileSync("../data/pokedex.json", "utf8"));
+const result : object  = {};
 //処理前のタイプ確認
 console.log(pokeObject[0].type);
 //処理開始
